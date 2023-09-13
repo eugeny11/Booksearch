@@ -10,10 +10,15 @@ const BooklistContainer = () => {
     loading,
     totalItems,
   } = useSelector((state) => state.books.books);
-  const currentPage = useSelector((state) => state.books.currentPage);
-  const searchValue = useSelector((state) => state.filters.searchValue);
-  const category = useSelector((state) => state.filters.category);
-  const sortType = useSelector((state) => state.filters.sortType);
+  const currentPage = useSelector((state) => state.books?.currentPage);
+  const searchValue = useSelector((state) => state.filters?.searchValue);
+  const category = useSelector((state) => state.filters?.category);
+  const sortType = useSelector((state) => state.filters?.sort);
+
+  console.log("searchValue:", searchValue);
+  console.log("category:", category);
+  console.log("sortType:", sortType);
+  console.log("currentPage:", currentPage);
 
   useEffect(() => {
     dispatch(
@@ -26,9 +31,8 @@ const BooklistContainer = () => {
     );
   }, [dispatch]);
 
-  const loadMoreBooks = async () => {
+  const loadMoreBooks = () => {
     if (searchValue && category && sortType && currentPage !== undefined) {
-      await Promise.all([searchValue, category, sortType, currentPage]);
       dispatch(
         loadMoreBooksAsync({
           searchValue,
