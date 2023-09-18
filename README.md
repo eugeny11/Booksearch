@@ -1,6 +1,6 @@
 # Booksearch project
 
-Test project for searching and filtering of books, made using the Google Books service.
+Project for searching and filtering of books, made using the Google Books service.
 
 ### `npm start`
 
