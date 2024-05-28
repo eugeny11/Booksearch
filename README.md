@@ -1,6 +1,6 @@
 # Booksearch project
 
-Project for searching and filtering of books, made using the Google Books service.
+Simple and useful template example of application for searching and filtering of books, made using the Google Books service.
 
 ## How to run and clone react app
 
