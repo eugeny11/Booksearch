@@ -23,7 +23,7 @@ const SearchBar = ({
         onKeyPress={onKeyPress}
       />
       <select value={category} onChange={onCategoryChange}>
-        <option value="all">Все категории</option>
+        <option value="all">All categories</option>
         <option value="art">Art</option>
         <option value="biography">Biography</option>
         <option value="computers">Computers</option>
@@ -32,10 +32,10 @@ const SearchBar = ({
         <option value="poetry">Poetry</option>
       </select>
       <select value={sortType} onChange={onSortChange}>
-        <option value="relevance">По релевантности</option>
-        <option value="newest">Самые новые</option>
+        <option value="relevance">Relevant search</option>
+        <option value="newest">Newest</option>
       </select>
-      <button onClick={onSearch}>Поиск</button>
+      <button onClick={onSearch}>Search...</button>
     </div>
   );
 };
