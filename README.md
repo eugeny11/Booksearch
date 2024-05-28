@@ -2,12 +2,8 @@
 
 Project for searching and filtering of books, made using the Google Books service.
 
-### `npm start`
+## How to run and clone react app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-ihttps://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Open your terminal and then type. $ git clone {the url to the GitHub repo} This clones the repo.
+cd into the new folder and type. $ npm install. This installs the required dependencies.
+To run the React project. $ npm start.
